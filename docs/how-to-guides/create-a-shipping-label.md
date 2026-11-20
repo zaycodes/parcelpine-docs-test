@@ -1,4 +1,4 @@
-# Create a shipping label
+# Create shipping labels
 
 You can buy a label for any order that has a complete address.
 
