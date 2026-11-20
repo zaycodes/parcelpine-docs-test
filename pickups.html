@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pickups · Parcelpine (widget test)</title>
+<style>
+  body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f4f6f5; color: #1e1b1d; }
+  header { background: #2f6b4f; color: #fff; padding: 14px 24px; display: flex; gap: 24px; align-items: center; }
+  header strong { font-size: 20px; }
+  header a { color: #fff; text-decoration: none; opacity: .85; }
+  header a.on { opacity: 1; border-bottom: 2px solid #fff; }
+  main { max-width: 900px; margin: 32px auto; padding: 0 16px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; }
+  th, td { text-align: left; padding: 12px; border-bottom: 1px solid #e3e7e5; }
+  button { background: #2f6b4f; color: #fff; border: 0; padding: 8px 14px; border-radius: 6px; cursor: pointer; }
+  .note { margin-top: 24px; font-size: 14px; color: #555; }
+</style>
+</head>
+<body>
+<header>
+  <strong>parcelpine</strong>
+  <a href="orders.html">Orders</a>
+  <a class="on" href="pickups.html">Pickups</a>
+</header>
+<main>
+  <h1>Pickups</h1>
+  <table>
+    <tr><th>Order</th><th>Customer</th><th>Weight</th><th></th></tr>
+    <tr><td>#1042</td><td>A. Customer</td><td>1.2 kg</td><td><button>Get rates</button></td></tr>
+    <tr><td>#1043</td><td>B. Customer</td><td>missing</td><td><button>Get rates</button></td></tr>
+    <tr><td>#1044</td><td>C. Customer</td><td>75 kg</td><td><button>Get rates</button></td></tr>
+  </table>
+  <p class="note">Test page for the Document360 widget. The help button should appear in a corner of this page.</p>
+</main>
+
+<!-- Document360 knowledge base widget start -->
+<script>
+  (function (w,d,s,o,f,js,fjs) {
+    w['JS-Widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+    js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+    js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+  }(window, document, 'script', 'mw', 'https://cdn.document360.io/static/js/widget.js'));
+  mw('init', { apiKey: 'VoH+HSs3aXEbsop8y78gLxI7DldVKo4LFrIzyp0E/qRmKi5qaPNCmluZbSdmlL9RAJ4K1DomKZ7MSIOI5sPys97Hj0z3fZYLGiKFfe4MWgXLxyKrYEBN/eJ3xhJRjWpVgpiBkbeGKgNyHRafr1f6NvHuut/COumg4LL82d/1HjQ=' });
+</script>
+<!-- Document360 knowledge base widget end -->
+</body>
+</html>
